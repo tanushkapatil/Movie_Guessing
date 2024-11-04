@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guess the Movie Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Movie Game!</h1>
+        <div id="setup">
+            <label for="movie">Enter your favorite movie:</label>
+            <input type="text" id="movie" placeholder="Type a movie name">
+            <button id="setMovieBtn">Set Movie</button>
+        </div>
+        <div id="guessing" style="display: none;">
+            <p>Now, someone else has to guess the movie!</p>
+            <label for="guess">Guess the movie:</label>
+            <input type="text" id="guess" placeholder="Type your guess">
+            <button id="guessBtn">Submit Guess</button>
+            <button id="quitBtn" class="quit-btn">Quit</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
